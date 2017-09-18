@@ -1,0 +1,18 @@
+<script>
+    
+    function add()
+    {
+        var t1 = document.getElementById("t1");
+        var ip= t1.value;
+        var t2 = document.getElementById("t2");
+        var ip1=t2.value;
+        var op=Number(ip) + Number(ip1);
+         var span2 = document.getElementById("span1");
+        span1.innerHTML="sum is " +op;
+    }
+
+    </script>
+    enter a number : <input type="number" id=t1 > <br>
+    enter 2nd number : <input type="number" id=t2 > <br>
+       <input type=button value="add" onclick=add()>
+       <span id=span1></span>
