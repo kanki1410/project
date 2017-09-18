@@ -1,0 +1,23 @@
+<script>
+    function display(x){
+    var d= new Date();
+    var m="";
+    if(x=="date")
+    {
+        m=d.getDate()+"/"+d.getMonth()+"/"+d.getFullYear();
+    }
+    else if (x=="time") 
+    {
+        m=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+    }
+    var span1=document.getElementById("span1");
+    span1.innerHTML=m;
+}
+</script>
+<input type=button value=date onclick="display(date)">
+<input type=button value=time onclick="display(time)">
+<span id="span1">
+
+</span>
+
+
